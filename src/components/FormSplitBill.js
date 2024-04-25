@@ -19,7 +19,7 @@ function FormSplitBill({ selectedFriends, onSplitBill }) {
   }
 
   return (
-    <form className="form-split-bill" onSubmit={handleSubmit}>
+    <form className=" relative form-split-bill" onSubmit={handleSubmit}>
       <h2>Split a bill with {selectedFriends.name}</h2>
 
       <label>Bill value</label>
@@ -53,6 +53,9 @@ function FormSplitBill({ selectedFriends, onSplitBill }) {
       </select>
 
       <Button>Split Bill</Button>
+      <div className=' absolute w-56 lg:w-auto top-[-50px] lg:top-[-78px] lg:right-0 '>
+          <img src="/Svgs/love.svg" alt="icon svg" />
+        </div>
     </form>
   );
 }

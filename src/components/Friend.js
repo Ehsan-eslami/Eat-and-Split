@@ -7,7 +7,7 @@ function Friend({ friend, onSelection, selectedFriends }) {
   const isSelected = selectedFriends?.id === friend?.id;
 
   return (
-    <li className={isSelected ? "selected" : ""}>
+    <li className={isSelected ? "selected relative" : ""}>
       <img src={friend.image} alt={friend.name} />
       <h3>{friend.name}</h3>
 
@@ -26,6 +26,9 @@ function Friend({ friend, onSelection, selectedFriends }) {
       <Button onClick={() => onSelection(friend)}>
         {isSelected ? "Close" : "Select"}
       </Button>
+      <div className=' absolute top-[-140px] right-0'>
+          <img src="/Svgs/fun-moments.svg" alt="" />
+        </div>
     </li>
   );
 }

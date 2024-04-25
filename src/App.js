@@ -68,6 +68,15 @@ export default function App() {
         : 
         <LoadingSplit />
       }
+
+      {/* svgs in the app */}
+      <div className="hidden  md:block   absolute right-0  lg:bottom-0 lg:right-10  ">
+        <img src="/Svgs/walking.svg" alt="" />
+      </div>
+
+      <div className="hidden  md:block   absolute left-0  lg:bottom-0 lg:left-10  ">
+        <img src="/Svgs/walking_in_rain.svg" alt="" />
+      </div>
     </div>
   );
 }
