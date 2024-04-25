@@ -5,6 +5,7 @@ import FormSplitBill from './components/FormSplitBill'
 import FormAddFriend from './components/FormAddFriend'
 import LoadingForm from "./components/LoadingForm";
 import LoadingSplit from './components/LoadingSplit'
+import Footer from './components/Footer'
 
  
 
@@ -77,6 +78,7 @@ export default function App() {
       <div className="hidden  md:block   absolute left-0  lg:bottom-0 lg:left-10  ">
         <img src="/Svgs/walking_in_rain.svg" alt="" />
       </div>
+      <Footer />
     </div>
   );
 }
